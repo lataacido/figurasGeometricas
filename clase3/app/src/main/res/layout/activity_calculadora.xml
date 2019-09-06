@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Calculadora">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Evaluacion 1" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione figura:" />
+    <Spinner
+        android:id="@+id/sp_figura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/etNum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioButton
+        android:id="@+id/rbArea"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Area" />
+
+    <RadioButton
+        android:id="@+id/rbPerimetro"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Perimetro" />
+
+    <RadioButton
+        android:id="@+id/rbDiagonal"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Diagonal" />
+
+    <RadioGroup
+        android:id="@+id/rgOperaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Calcular" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pasar dato" />
+
+    <EditText
+        android:id="@+id/etResul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPagi"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Siguiente pagina" />
+
+</LinearLayout>
