@@ -16,7 +16,7 @@ public class quien extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quien);
 
-        Button btn2 = (Button) findViewById(R.id.botonact2);
+        Button btn2 = (Button) findViewById(R.id.boto2);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

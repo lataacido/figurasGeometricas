@@ -185,9 +185,7 @@ public class Calculadora extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),quien.class);
-                //Export paremetro
-                //intent.putExtra("frase",etResu.getText().toString());
+                Intent intent = new Intent (view.getContext(), quien.class);
                 startActivityForResult(intent, 0);
             }
         });
