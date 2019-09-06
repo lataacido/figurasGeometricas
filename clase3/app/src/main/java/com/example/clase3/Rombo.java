@@ -124,7 +124,10 @@ public class Rombo extends AppCompatActivity {
 
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
-
+                    Intent intent = new Intent(view.getContext(),Mostar.class);
+                    //Export paremetro
+                    intent.putExtra("frase",etResultado.getText().toString());
+                    startActivityForResult(intent, 0);
 
 
                 }if(rbArea.isChecked()== true){
@@ -138,6 +141,10 @@ public class Rombo extends AppCompatActivity {
                     toast.setGravity(Gravity.LEFT|Gravity.LEFT, 0, 0);
 
                     toast.show();
+                    Intent intent = new Intent(view.getContext(),Mostar.class);
+                    //Export paremetro
+                    intent.putExtra("frase",etResultado.getText().toString());
+                    startActivityForResult(intent, 0);
 
                 }if(rbDiagonal.isChecked()== true){
                     etResultado.setText(""+raiz);
@@ -150,7 +157,10 @@ public class Rombo extends AppCompatActivity {
                     toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
                     toast.setDuration(Toast.LENGTH_LONG);
                     toast.show();
-
+                    Intent intent = new Intent(view.getContext(),Mostar.class);
+                    //Export paremetro
+                    intent.putExtra("frase",etResultado.getText().toString());
+                    startActivityForResult(intent, 0);
 
 
                 }
@@ -159,7 +169,7 @@ public class Rombo extends AppCompatActivity {
 
             }
         });
-
+/*
         //CARGAMOS EL TEXTO A EXPORTAR
         final EditText etResu;
         etResu = (EditText)findViewById(R.id.etResul);
@@ -174,7 +184,7 @@ public class Rombo extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-
+*/
 
     }
 }
