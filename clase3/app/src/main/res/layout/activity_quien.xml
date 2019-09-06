@@ -1,27 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D713A56B"
     android:orientation="vertical"
     tools:context=".quien">
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="188dp"
+        android:background="#00000000"
         android:gravity="center"
-        android:text="Resultado"/>
+        android:text="Quienes somos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-    <EditText
-        android:id="@+id/etResul"
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="97dp"
+        android:text="Integrantes:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:text="Edgard Henriquez"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Esteban Terrones S"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <Button
-        android:id="@+id/botonact2"
+        android:id="@+id/boto2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="volver" />
+        android:text="volver"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
 </LinearLayout>

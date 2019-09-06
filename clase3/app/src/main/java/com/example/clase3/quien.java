@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class quien extends AppCompatActivity {
 
-    private Button botonact2;
+    private Button boto2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,5 +22,7 @@ public class quien extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(v.getContext(), Calculadora.class);
                 startActivityForResult(intent2, 0);
-    }
-}
+            }
+        });
+            }
+        }

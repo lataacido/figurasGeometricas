@@ -23,7 +23,7 @@ public class Calculadora extends AppCompatActivity {
 
     private EditText etNun1,etNun2,etResultado;
     private RadioButton rbPerimetro,rbArea,rbDiagonal;
-    private Button btnCalcular;
+    private Button btnCalcular,btnQuin;
     private Spinner sp_figura;
 
     @Override
@@ -176,22 +176,22 @@ public class Calculadora extends AppCompatActivity {
 
             }
         });
-/*
-        //CARGAMOS EL TEXTO A EXPORTAR
-        final EditText etResu;
-        etResu = (EditText)findViewById(R.id.etResul);
 
-        Button btn = (Button) findViewById(R.id.btnPagi);
+        //CARGAMOS EL TEXTO A EXPORTAR
+       // final EditText etResu;
+        //etResu = (EditText)findViewById(R.id.etResul);
+
+        Button btn = (Button) findViewById(R.id.btnQuin);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(),Mostar.class);
                 //Export paremetro
-                intent.putExtra("frase",etResu.getText().toString());
+                //intent.putExtra("frase",etResu.getText().toString());
                 startActivityForResult(intent, 0);
             }
         });
 
-*/
+
     }
 }

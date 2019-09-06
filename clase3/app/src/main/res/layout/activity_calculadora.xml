@@ -75,4 +75,10 @@
         android:layout_height="38dp"
         android:text="Calcular" />
 
+    <Button
+        android:id="@+id/btnQuin"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="Quienes Somos" />
+
 </LinearLayout>
