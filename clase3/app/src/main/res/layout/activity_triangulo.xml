@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Calculadora">
+    tools:context=".Triangulo">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="153dp"
-        app:srcCompat="@drawable/re1" />
+        app:srcCompat="@drawable/ron2" />
 
     <EditText
         android:id="@+id/etNum1"

@@ -18,18 +18,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Calculadora extends AppCompatActivity {
-
-
+public class Triangulo extends AppCompatActivity {
     private EditText etNun1,etNun2,etResultado;
     private RadioButton rbPerimetro,rbArea,rbDiagonal;
     private Button btnCalcular;
     private Spinner sp_figura;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculadora);
+        setContentView(R.layout.activity_triangulo);
+
         Spinner spinner = (Spinner) findViewById(R.id.sp_figura);
 
         etNun1 = (EditText)findViewById(R.id.etNum1);
@@ -44,15 +44,15 @@ public class Calculadora extends AppCompatActivity {
 
         // Spinner click listener
         spinner.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
-            public void onItemSelected(AdapterView<?>spn,
+            public void onItemSelected(AdapterView<?> spn,
                                        android.view.View v,
                                        int posicion,
                                        long id) {
-                                              // arg0, View arg1, int arg2, long arg3){
+                // arg0, View arg1, int arg2, long arg3){
                 if (posicion == 0){
                     // Abre una nueva Activity:
-                  //  Intent myIntent = new Intent(spn.getContext(), Mostar.class);
-                   // startActivity(myIntent);
+                    //  Intent myIntent = new Intent(spn.getContext(), Mostar.class);
+                    // startActivity(myIntent);
                 }else if(posicion == 1){
                     // Abre una nueva Activity:
                     Intent myIntent = new Intent(spn.getContext(), Cuadrado.class);
@@ -127,11 +127,6 @@ public class Calculadora extends AppCompatActivity {
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
 
-                    Intent intent = new Intent(view.getContext(),Mostar.class);
-                    //Export paremetro
-                    intent.putExtra("frase",etResultado.getText().toString());
-                    startActivityForResult(intent, 0);
-
 
 
                 }if(rbArea.isChecked()== true){
@@ -146,11 +141,6 @@ public class Calculadora extends AppCompatActivity {
 
                     toast.show();
 
-                    Intent intent = new Intent(view.getContext(),Mostar.class);
-                    //Export paremetro
-                    intent.putExtra("frase",etResultado.getText().toString());
-                    startActivityForResult(intent, 0);
-
                 }if(rbDiagonal.isChecked()== true){
                     etResultado.setText(""+raiz);
 
@@ -163,11 +153,6 @@ public class Calculadora extends AppCompatActivity {
                     toast.setDuration(Toast.LENGTH_LONG);
                     toast.show();
 
-                    Intent intent = new Intent(view.getContext(),Mostar.class);
-                    //Export paremetro
-                    intent.putExtra("frase",etResultado.getText().toString());
-                    startActivityForResult(intent, 0);
-
 
 
                 }
@@ -176,7 +161,7 @@ public class Calculadora extends AppCompatActivity {
 
             }
         });
-/*
+
         //CARGAMOS EL TEXTO A EXPORTAR
         final EditText etResu;
         etResu = (EditText)findViewById(R.id.etResul);
@@ -192,6 +177,6 @@ public class Calculadora extends AppCompatActivity {
             }
         });
 
-*/
+
     }
 }

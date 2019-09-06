@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Rombo"></activity>
+        <activity android:name=".Triangulo" />
+        <activity android:name=".Circulo" />
+        <activity android:name=".Cuadrado" />
         <activity
             android:name=".menu"
             android:label="@string/title_activity_menu"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Mostar" />
         <activity android:name=".Calculadora">
 
