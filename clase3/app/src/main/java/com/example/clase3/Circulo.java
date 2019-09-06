@@ -31,7 +31,7 @@ public class Circulo extends AppCompatActivity {
         Spinner spinner = (Spinner) findViewById(R.id.sp_figura);
 
         etNun1 = (EditText)findViewById(R.id.etNum1);
-        etNun2 = (EditText)findViewById(R.id.etNum2);
+       // etNun2 = (EditText)findViewById(R.id.etNum2);
         etResultado = (EditText)findViewById(R.id.etResultado);
 
         rbPerimetro = (RadioButton)findViewById(R.id.rbPerimetro);
@@ -108,15 +108,19 @@ public class Circulo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int num = Integer.parseInt(etNun1.getText().toString());
-                int num2 = Integer.parseInt(etNun2.getText().toString());
+             //   int num2 = Integer.parseInt(etNun2.getText().toString());
 
-                int resultado =num*num2;
-                int area1 =num*num;
-                int area2 =num2*num2;
-                double raiz =Math.sqrt(num*num+num2*num2);
+               // int resultado =num*num2;
+                double area,perime;
+                int diagonal =2*num;
+                perime =2*Math.PI*num;
+                 area = Math.PI*(num*num);
+
+                //radio=Double.parseDouble(etNun1.getText().toString());
 
                 if(rbPerimetro.isChecked()== true){
-                    etResultado.setText(""+(num+num+num2+num2));
+                    etResultado.setText(""+ perime);
+
 
                     Context context = getApplicationContext();
                     CharSequence text = "Resultado Listo" ;
@@ -131,7 +135,7 @@ public class Circulo extends AppCompatActivity {
 
 
                 }if(rbArea.isChecked()== true){
-                    etResultado.setText(Integer.toString(area1+area2));
+                    etResultado.setText("" + area);
 
                     Context context = getApplicationContext();
                     CharSequence text = "Resultado Listo" ;
@@ -147,7 +151,7 @@ public class Circulo extends AppCompatActivity {
                     startActivityForResult(intent, 0);
 
                 }if(rbDiagonal.isChecked()== true){
-                    etResultado.setText(""+raiz);
+                    etResultado.setText("" + diagonal);
 
                     Context context = getApplicationContext();
                     CharSequence text = "Resultado Listo" ;

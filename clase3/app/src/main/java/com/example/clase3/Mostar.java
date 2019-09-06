@@ -25,6 +25,7 @@ public class Mostar extends AppCompatActivity {
 
 
 
+
         String etResul = fraseimportada;
         TextView out = (EditText)findViewById(R.id.etResul);
         out.setText(etResul);

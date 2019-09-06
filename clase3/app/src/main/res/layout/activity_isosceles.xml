@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Rombo">
+    tools:context=".Isosceles">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:layout_height="153dp"
-        app:srcCompat="@drawable/ron2" />
+        app:srcCompat="@drawable/e2" />
 
     <EditText
         android:id="@+id/etNum1"
@@ -35,6 +35,10 @@
 
     <EditText
         android:id="@+id/etNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etNum3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -50,6 +54,12 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:text="Perimetro" />
+
+    <RadioButton
+        android:id="@+id/rbDiagonal"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="Semiperímetro" />
 
     <RadioGroup
         android:id="@+id/rgOperaciones"
