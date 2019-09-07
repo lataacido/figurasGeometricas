@@ -33,11 +33,11 @@ Proyecto EVA1 para desarrollo de apps moviles
 
 ![alt text](http://terrosanonline.com/images/re1.jpeg) <br>
 
-<h3>Circulo</h3>
+<h3>Rombo</h3>
 
 ![alt text](http://terrosanonline.com/images/ron2.jpeg) <br>
 
-<h3>Cuadrado</h3>
+<h3>Circulo</h3>
 
 ![alt text](http://terrosanonline.com/images/sfera.jpeg) <br>
 
